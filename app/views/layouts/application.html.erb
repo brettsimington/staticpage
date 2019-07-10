@@ -10,6 +10,46 @@
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-5 links">
+        <%= link_to 'Welcome to my static page! If you click here, you will be sent to Google!', 'https://google.com' %>
+      </div>
+    </header>
+
+    <hr />
+
+ <br class="clear" />
+
+
+
+  <div class="container">
     <%= yield %>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+ <div class="col-10 offset-1">
+  <p>This is a static page created for a quiz required to pass the boot camp.</p>
+  <p>I hope you like this page as much as I enjoyed creating it!</p>
+</div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+                <div class="col-6">
+        Thank you for visiting! 
+      </div>
+      <div class="col-6 footer-blurb">
+        Proudly built by <a href="https://github.com/brettsimington">[Brett Simington]</a><br />
+      </div>
+        </div>
+      </div>
+    </div>
+
+     
+
+
+
   </body>
 </html>
