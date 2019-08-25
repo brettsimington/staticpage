@@ -1,5 +1,6 @@
-class HomeController < ApplicationController
-    def index
+class AvengersController < ApplicationController
+
+  def index
   @avengers = Avenger.first
   end
 
@@ -20,4 +21,5 @@ end
   def avenger_params
     params.require(:avenger).permit(:avenger)
   end
+
 end
